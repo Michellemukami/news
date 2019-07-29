@@ -14,9 +14,9 @@
     {% for source in sources%}
     <div class="col-md-12">
       <h2><a href="{{source.source_url}}">{{source.source_name}}</a></h2>
-      <p><strong>Language:</strong> {{source.source_language}}</p>
+      <p><strong>Language USED:</strong> {{source.source_language}}</p>
       <p><strong>Category:</strong> {{source.source_category}}</p>
-      <h3><strong>AboutUs:</strong></h3>
+      <h3><strong>About:</strong></h3>
       <p>{{source.source_description}}</p>
     </div>
     {% endfor%}
