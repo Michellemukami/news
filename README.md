@@ -22,7 +22,7 @@ Click on the green 'clone or download' button to get this project on your PC
 
 ## Technologies used
 
- * Python.6
+ * Python3.6
  * Bootstrap
  * Flask
  * css
