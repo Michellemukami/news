@@ -1,4 +1,4 @@
-#News Highlight
+# NewsHighlight
 This is a webpage where you can view the latest news updates {29/07/2019}
 #### By Michelle Mukami Gitau
 
