@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="jumbotron">
+  <h1>NEWS-HIGHLIGHTS</h1>
+  <h3>WE GOT NEWS FOR YOU!!!</h3>
+  <a href="#">KNOW MORE ABOUT OUR SOURCES</a>
+  <a href="{{url_for('main.highlights')}}">THE NEWS HIGHLIGHTS</a>
+</div>
+<div class="container">
+  <div class="row">
+    {% for source in sources%}
+    <div class="col-md-12">
+      <h2><a href="{{source.source_url}}">{{source.source_name}}</a></h2>
+      <p><strong>Language:</strong> {{source.source_language}}</p>
+      <p><strong>Category:</strong> {{source.source_category}}</p>
+      <h3><strong>AboutUs:</strong></h3>
+      <p>{{source.source_description}}</p>
+    </div>
+    {% endfor%}
+  </div>
+
+</div>
+
+
+{% endblock %}
+

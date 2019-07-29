@@ -1,0 +1,14 @@
+{% extends 'bootstrap/base.html' %}
+<meta http-equiv="Cache-control" content="no-cache">
+{% block styles %}
+  {{super()}}
+
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gentium+Basic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="{{url_for('static', filename='css/highs.css')}}">
+
+{% endblock %}
+{% block navbar %}
+  {% include 'navbar.html'%}
+{% endblock %}

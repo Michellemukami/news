@@ -1,0 +1,12 @@
+{% macro displayNewsList(news_list) %}
+
+  {% for news in news_list %}
+      <div class="col-md-3 ">
+      <img src="{{news.imageUrl}}" alt="" class="img-responsive" border-radius="50%">
+      <p>{{news.description}}</p>
+      
+      <div class="button_cont"><a class="example_f" href="{{news.source_url}}" target="_blank" rel="nofollow"><span>Read more...</a></div>
+    </div>
+ 
+  {% endfor %}
+{% endmacro %}

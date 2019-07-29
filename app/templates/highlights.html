@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+{% block content %}
+
+<div class="jumbotron">
+  <h1>HIGHLIGHTS</h1>
+  <h3>{{title}}</h3>
+  <a href="{{url_for('main.index')}}">KNOW ABOUT OUR SOURCES</a>
+  <a href="#">THE NEWS HIGHLIGHTS</a>
+</div>
+
+<div class="container">
+  <div class="row">
+    <h1>GENERAL:</h1>
+    <hr>
+    <ul>
+      {{macro.displayNewsList(general)}}
+    </ul>
+  </div>
+  <div class="row">
+    <h2>WEATHER</h2>
+    <hr>
+    <ul>
+      {{macro.displayNewsList(weather)}}
+    </ul>
+  </div>
+  <div class="row">
+    <h2>SPORTS</h2>
+    <hr>
+    <ul>
+      {{macro.displayNewsList(sports)}}
+    </ul>
+  </div>
+
+</div>
+{%endblock%}
