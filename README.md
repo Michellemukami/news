@@ -12,7 +12,6 @@ Click on the green 'clone or download' button to get this project on your PC
 
 ## BEHAVIOR DRIVEN DEVELOPMENT (Specifications)
 
-* * *
 
 | Behavior                         | Input            | Output       |
 | -------------------------------- | ---------------- | ------------ |
